@@ -15,7 +15,7 @@ class MovieSearchViewController: UIViewController, UITableViewDelegate, UITableV
     @IBOutlet weak var tableView: UITableView!
     
     //MARK: - Properties
-    var movies: [Any] = [] {
+    var movies: [DHKMovie] = [] {
         didSet {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
@@ -33,7 +33,13 @@ class MovieSearchViewController: UIViewController, UITableViewDelegate, UITableV
 
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // IIDOO
+        if segue.identifier == "toMovieDetail" {
+            guard let index = tableView.indexPathForSelectedRow?.row else { return }
+            if let destinationVC = segue.destination as? MovieDetailViewController {
+                let movie = movies[index]
+                destinationVC.movie = movie
+            }
+        }
     }
     
     // MARK: - TableView stubs

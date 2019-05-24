@@ -16,6 +16,7 @@
 		CAD3A60C229843CD00A71DD9 /* DHKMovieController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD3A60B229843CD00A71DD9 /* DHKMovieController.m */; };
 		CAD3A610229846DB00A71DD9 /* MovieSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD3A60F229846DB00A71DD9 /* MovieSearchViewController.swift */; };
 		CAD3A6132298474F00A71DD9 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD3A6122298474F00A71DD9 /* MovieTableViewCell.swift */; };
+		CAD3A6152298509200A71DD9 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD3A6142298509200A71DD9 /* MovieDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		CAD3A60E229846DA00A71DD9 /* MovieDatabase_ObjC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MovieDatabase_ObjC-Bridging-Header.h"; sourceTree = "<group>"; };
 		CAD3A60F229846DB00A71DD9 /* MovieSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchViewController.swift; sourceTree = "<group>"; };
 		CAD3A6122298474F00A71DD9 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		CAD3A6142298509200A71DD9 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				CAD3A5F522983F5F00A71DD9 /* Main.storyboard */,
 				CAD3A60F229846DB00A71DD9 /* MovieSearchViewController.swift */,
 				CAD3A6122298474F00A71DD9 /* MovieTableViewCell.swift */,
+				CAD3A6142298509200A71DD9 /* MovieDetailViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				CAD3A5F122983F5F00A71DD9 /* AppDelegate.m in Sources */,
 				CAD3A6132298474F00A71DD9 /* MovieTableViewCell.swift in Sources */,
 				CAD3A60C229843CD00A71DD9 /* DHKMovieController.m in Sources */,
+				CAD3A6152298509200A71DD9 /* MovieDetailViewController.swift in Sources */,
 				CAD3A610229846DB00A71DD9 /* MovieSearchViewController.swift in Sources */,
 				CAD3A6082298411B00A71DD9 /* DHKMovie.m in Sources */,
 			);
