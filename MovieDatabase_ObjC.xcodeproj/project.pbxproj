@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CAD3A5F122983F5F00A71DD9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD3A5F022983F5F00A71DD9 /* AppDelegate.m */; };
-		CAD3A5F422983F5F00A71DD9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD3A5F322983F5F00A71DD9 /* ViewController.m */; };
 		CAD3A5F722983F5F00A71DD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD3A5F522983F5F00A71DD9 /* Main.storyboard */; };
 		CAD3A5F922983F6000A71DD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAD3A5F822983F6000A71DD9 /* Assets.xcassets */; };
 		CAD3A5FC22983F6000A71DD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD3A5FA22983F6000A71DD9 /* LaunchScreen.storyboard */; };
@@ -19,8 +18,6 @@
 		CAD3A5EC22983F5F00A71DD9 /* MovieDatabase_ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieDatabase_ObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD3A5EF22983F5F00A71DD9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CAD3A5F022983F5F00A71DD9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CAD3A5F222983F5F00A71DD9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CAD3A5F322983F5F00A71DD9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CAD3A5F622983F5F00A71DD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAD3A5F822983F6000A71DD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAD3A5FB22983F6000A71DD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,17 +55,23 @@
 		CAD3A5EE22983F5F00A71DD9 /* MovieDatabase_ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				CAD3A5F522983F5F00A71DD9 /* Main.storyboard */,
+				CAD3A6052298401500A71DD9 /* Resources */,
+			);
+			path = MovieDatabase_ObjC;
+			sourceTree = "<group>";
+		};
+		CAD3A6052298401500A71DD9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				CAD3A5EF22983F5F00A71DD9 /* AppDelegate.h */,
 				CAD3A5F022983F5F00A71DD9 /* AppDelegate.m */,
-				CAD3A5F222983F5F00A71DD9 /* ViewController.h */,
-				CAD3A5F322983F5F00A71DD9 /* ViewController.m */,
-				CAD3A5F522983F5F00A71DD9 /* Main.storyboard */,
 				CAD3A5F822983F6000A71DD9 /* Assets.xcassets */,
 				CAD3A5FA22983F6000A71DD9 /* LaunchScreen.storyboard */,
 				CAD3A5FD22983F6000A71DD9 /* Info.plist */,
 				CAD3A5FE22983F6000A71DD9 /* main.m */,
 			);
-			path = MovieDatabase_ObjC;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +144,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAD3A5F422983F5F00A71DD9 /* ViewController.m in Sources */,
 				CAD3A5FF22983F6000A71DD9 /* main.m in Sources */,
 				CAD3A5F122983F5F00A71DD9 /* AppDelegate.m in Sources */,
 			);
@@ -286,7 +288,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MovieDatabase_ObjC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MovieDatabase_ObjC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +304,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MovieDatabase_ObjC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MovieDatabase_ObjC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
