@@ -13,6 +13,7 @@
 		CAD3A5FC22983F6000A71DD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD3A5FA22983F6000A71DD9 /* LaunchScreen.storyboard */; };
 		CAD3A5FF22983F6000A71DD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD3A5FE22983F6000A71DD9 /* main.m */; };
 		CAD3A6082298411B00A71DD9 /* DHKMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD3A6072298411B00A71DD9 /* DHKMovie.m */; };
+		CAD3A60C229843CD00A71DD9 /* DHKMovieController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD3A60B229843CD00A71DD9 /* DHKMovieController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		CAD3A5FE22983F6000A71DD9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CAD3A6062298411B00A71DD9 /* DHKMovie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHKMovie.h; sourceTree = "<group>"; };
 		CAD3A6072298411B00A71DD9 /* DHKMovie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHKMovie.m; sourceTree = "<group>"; };
+		CAD3A60A229843CD00A71DD9 /* DHKMovieController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHKMovieController.h; sourceTree = "<group>"; };
+		CAD3A60B229843CD00A71DD9 /* DHKMovieController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHKMovieController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 				CAD3A5F522983F5F00A71DD9 /* Main.storyboard */,
 				CAD3A6092298411F00A71DD9 /* Models */,
 				CAD3A6052298401500A71DD9 /* Resources */,
+				CAD3A60D229843D300A71DD9 /* Model Controllers */,
 			);
 			path = MovieDatabase_ObjC;
 			sourceTree = "<group>";
@@ -85,6 +89,15 @@
 				CAD3A6072298411B00A71DD9 /* DHKMovie.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CAD3A60D229843D300A71DD9 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CAD3A60A229843CD00A71DD9 /* DHKMovieController.h */,
+				CAD3A60B229843CD00A71DD9 /* DHKMovieController.m */,
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +172,7 @@
 			files = (
 				CAD3A5FF22983F6000A71DD9 /* main.m in Sources */,
 				CAD3A5F122983F5F00A71DD9 /* AppDelegate.m in Sources */,
+				CAD3A60C229843CD00A71DD9 /* DHKMovieController.m in Sources */,
 				CAD3A6082298411B00A71DD9 /* DHKMovie.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
