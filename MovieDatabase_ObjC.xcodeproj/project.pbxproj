@@ -14,6 +14,8 @@
 		CAD3A5FF22983F6000A71DD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD3A5FE22983F6000A71DD9 /* main.m */; };
 		CAD3A6082298411B00A71DD9 /* DHKMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD3A6072298411B00A71DD9 /* DHKMovie.m */; };
 		CAD3A60C229843CD00A71DD9 /* DHKMovieController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD3A60B229843CD00A71DD9 /* DHKMovieController.m */; };
+		CAD3A610229846DB00A71DD9 /* MovieSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD3A60F229846DB00A71DD9 /* MovieSearchViewController.swift */; };
+		CAD3A6132298474F00A71DD9 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD3A6122298474F00A71DD9 /* MovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,9 @@
 		CAD3A6072298411B00A71DD9 /* DHKMovie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHKMovie.m; sourceTree = "<group>"; };
 		CAD3A60A229843CD00A71DD9 /* DHKMovieController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHKMovieController.h; sourceTree = "<group>"; };
 		CAD3A60B229843CD00A71DD9 /* DHKMovieController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHKMovieController.m; sourceTree = "<group>"; };
+		CAD3A60E229846DA00A71DD9 /* MovieDatabase_ObjC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MovieDatabase_ObjC-Bridging-Header.h"; sourceTree = "<group>"; };
+		CAD3A60F229846DB00A71DD9 /* MovieSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchViewController.swift; sourceTree = "<group>"; };
+		CAD3A6122298474F00A71DD9 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +66,11 @@
 		CAD3A5EE22983F5F00A71DD9 /* MovieDatabase_ObjC */ = {
 			isa = PBXGroup;
 			children = (
-				CAD3A5F522983F5F00A71DD9 /* Main.storyboard */,
+				CAD3A611229846E400A71DD9 /* Views */,
 				CAD3A6092298411F00A71DD9 /* Models */,
 				CAD3A6052298401500A71DD9 /* Resources */,
 				CAD3A60D229843D300A71DD9 /* Model Controllers */,
+				CAD3A60E229846DA00A71DD9 /* MovieDatabase_ObjC-Bridging-Header.h */,
 			);
 			path = MovieDatabase_ObjC;
 			sourceTree = "<group>";
@@ -100,6 +106,16 @@
 			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
+		CAD3A611229846E400A71DD9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CAD3A5F522983F5F00A71DD9 /* Main.storyboard */,
+				CAD3A60F229846DB00A71DD9 /* MovieSearchViewController.swift */,
+				CAD3A6122298474F00A71DD9 /* MovieTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,6 +147,7 @@
 				TargetAttributes = {
 					CAD3A5EB22983F5E00A71DD9 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -172,7 +189,9 @@
 			files = (
 				CAD3A5FF22983F6000A71DD9 /* main.m in Sources */,
 				CAD3A5F122983F5F00A71DD9 /* AppDelegate.m in Sources */,
+				CAD3A6132298474F00A71DD9 /* MovieTableViewCell.swift in Sources */,
 				CAD3A60C229843CD00A71DD9 /* DHKMovieController.m in Sources */,
+				CAD3A610229846DB00A71DD9 /* MovieSearchViewController.swift in Sources */,
 				CAD3A6082298411B00A71DD9 /* DHKMovie.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +334,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/MovieDatabase_ObjC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,6 +343,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rabbitholefashion.MovieDatabase-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MovieDatabase_ObjC/MovieDatabase_ObjC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -331,6 +354,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/MovieDatabase_ObjC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -339,6 +363,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rabbitholefashion.MovieDatabase-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MovieDatabase_ObjC/MovieDatabase_ObjC-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
